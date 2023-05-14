@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./resources/css/style.css" />
+    <title>Prova Tècnica - David Subiela</title>
+  </head>
+  <body>
+    <main>
+      <header></header>
+      <section class="formulari">
+        <h2>User's Register</h2>
+        <form action="#" method="post" id="loginForm" target="_blank">
+          <input
+            type="text"
+            name="name"
+            id="name"
+            minlength="3"
+            placeholder="Name"
+          />
+          <input
+            type="text"
+            name="surname"
+            id="surname"
+            minlength="3"
+            placeholder="Surname"
+          />
+          <input
+            type="email"
+            name="email"
+            id="email"
+            placeholder="Email"
+            required
+          />
+          <input
+            type="tel"
+            name="number"
+            id="number"
+            placeholder="Phone"
+            minlength="9"
+            maxlength="9"
+            pattern="^[0-9]+"
+            title="You must write 9 numbers maximum in your mobile phone"
+            required
+          />
+          <input
+            type="password"
+            name="password"
+            id="password"
+            placeholder="Password"
+            pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+            title="Write 8 characters minimum, and at least 1 number, 1 letter and 1 capital letter."
+            required
+          />
+          <input
+            type="password"
+            name="repeatPassword"
+            id="repeatPassword"
+            placeholder="Repeat Password"
+            pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+            title="Must match with previous password."
+            required
+          />
+          <input type="submit" value="Register" />
+        </form>
+      </section>
+    </main>
+  </body>
+  <script src="./resources/css/script.js"></script>
+</html>
